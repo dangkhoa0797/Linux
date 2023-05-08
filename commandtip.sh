@@ -10,3 +10,8 @@ sudo chown <username>:<groupname> <filename>
 
 # add user to group
 usermod -aG <group> <user>
+
+# copy file and folder
+rsync -a /root/damian/ /root/khoa # copy all file and folder inside damian into khoa
+rsync -a /root/damian /root/khoa # copy folder damian into folder khoa
+cp -r /root/damian /root/khoa # copy folder damian into folder khoa
