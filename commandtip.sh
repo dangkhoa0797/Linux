@@ -13,5 +13,7 @@ usermod -aG <group> <user>
 
 # copy file and folder
 rsync -a /root/damian/ /root/khoa # copy all file and folder inside damian into khoa
-rsync -a /root/damian /root/khoa # copy folder damian into folder khoa
+rsync -avzhe --progress ssh root@192.168.1.1:/root/damian/ /root/khoa # use SSH copy all file and folder inside damian into khoa
+rsync -avzhe --progress ssh /root/damian/ root@192.168.1.1:/root/khoa # use SSH copy all file and folder inside damian into khoa
+#rsync -a /root/damian /root/khoa # copy folder damian into folder khoa
 cp -r /root/damian /root/khoa # copy folder damian into folder khoa
