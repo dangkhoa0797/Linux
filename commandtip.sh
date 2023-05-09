@@ -17,3 +17,6 @@ rsync -avzhe --progress ssh root@192.168.1.1:/root/damian/ /root/khoa # use SSH 
 rsync -avzhe --progress ssh /root/damian/ root@192.168.1.1:/root/khoa # use SSH copy all file and folder inside damian into khoa
 #rsync -a /root/damian /root/khoa # copy folder damian into folder khoa
 cp -r /root/damian /root/khoa # copy folder damian into folder khoa
+
+# copy file and folder from windows to linux
+scp -r d:/docs/notes.txt root@10.1.20.13:/root/go
