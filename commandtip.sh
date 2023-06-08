@@ -22,3 +22,9 @@ cp -r /root/damian /root/khoa # copy folder damian into folder khoa
 scp -r d:/docs/notes.txt root@10.1.20.13:/root/go
 
 # https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script nhập biến từ command line
+
+# get service use port
+ss -tulpn | grep LISTEN
+
+#get prosess with pid
+top -bcn 1
